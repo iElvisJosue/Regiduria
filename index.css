@@ -1,0 +1,195 @@
+:root{
+    --Negro: #000000;
+    --Blanco: #ffffff;
+    --AzulPastel: #a3cad6;
+    --AzulTexto: #659393;
+    --VerdePastel: #c2d6bd;
+    --VerdeTexto: #6e9566;
+    --NaranjaPastel: #f2dac6;
+    --NaranjaTexto: #db9862;
+    --RosaPastel: #efe0e0;
+    --RosaTexto: #cb9494;
+    --GrisPastel: #eeeeee;
+    --GrisOscuro: #747476;
+    --Rojo: #E7625F;
+    --Azul: #41729F;
+    --Verde: #81B622;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+/*****************  CSS DEL BODY *****************/
+body{
+    background: linear-gradient(45deg, var(--AzulTexto), var(--RosaTexto));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+button, input{
+    outline: none;
+    border: none;
+}
+.MensajeIniciandoSesion{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, var(--AzulTexto), var(--RosaTexto));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+.CargandoIcono{
+    width: 15rem;
+}
+.MensajeISOCR{
+    font-size: 2rem;
+    color: var(--Blanco);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.MostrarMIS{
+    z-index: 1000 !important;
+}
+.MostrarIC{
+    z-index: 999 !important;
+    opacity: 1 !important;
+}
+.MostrarCC{
+    z-index: 999 !important;
+    opacity: 1 !important;
+}
+.IniciarSesion, 
+.CrearCuenta{
+    position: absolute;
+    width: 40rem;
+    height: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--Blanco);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,.2);
+    opacity: 0;
+    z-index: -1;
+}
+.IniciarSesion::-webkit-scrollbar,
+.CrearCuenta::-webkit-scrollbar{
+    display: none;
+}
+.Login-LogoDelSistema{
+    width: 100%;
+    min-height: 8rem;
+    max-height: 8rem;
+    text-align: center;
+}
+.Login-Logo{
+    min-height: 8rem;
+    max-height: 8rem;
+    opacity: .8;
+}
+.IniciarSesion-Titulo,
+.CrearCuenta-Titulo{
+    height: auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--GrisOscuro);
+    font-weight: bold;
+    text-align: start;
+}
+.IniciarSesion-Subtitulo,
+.CrearCuenta-Subtitulo{
+    height: auto;
+    font-size: 1.5rem;
+    color: var(--GrisOscuro);
+    font-weight: bold;
+    text-align: start;
+}
+.IniciarSesion-Subtitulo a,
+.CrearCuenta-Subtitulo a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--AzulTexto);
+    cursor: pointer;
+}
+.IniciarSesion-Usuario, .IniciarSesion-Contrasena,
+.CrearCuenta-Usuario, .CrearCuenta-Contrasena, .CrearCuenta-Llave{
+    position: relative;
+    width: 100%;
+    min-height: 6rem;
+}
+.IniciarSesion-UsuarioSubtitulo, .IniciarSesion-ContrasenaSubtitulo,
+.CrearCuenta-UsuarioSubtitulo, .CrearCuenta-ContrasenaSubtitulo, .CrearCuenta-LlaveSubtitulo{
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+    color: var(--GrisOscuro);
+    font-weight: bold;
+}
+.IniciarSesion-InputUsuario, .IniciarSesion-InputContrasena,
+.CrearCuenta-InputUsuario, .CrearCuenta-InputContrasena, .CrearCuenta-InputLlave{
+    width: 100%;
+    min-height: 6rem;
+    padding: .5rem 3rem 0 1rem;
+    background: var(--GrisPastel);
+    border-radius: 1rem;
+    color: var(--GrisOscuro);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.IniciarSesion-InputUsuario, .CrearCuenta-InputUsuario{
+    text-transform: uppercase;
+}
+.IniciarSesion-InputUsuario:focus, .IniciarSesion-InputContrasena:focus,
+.CrearCuenta-InputUsuario:focus, .CrearCuenta-InputContrasena:focus,
+.CrearCuenta-InputLlave:focus{
+    border: 2px solid var(--GrisOscuro);
+}
+.IniciarSesion-IconoUsuario, .IniciarSesion-IconoContrasena,
+.CrearCuenta-IconoUsuario, .CrearCuenta-IconoContrasena, .CrearCuenta-IconoLlave{
+    position: absolute;
+    font-size: 2.5rem;
+    top: calc(50% - 1.25rem);
+    right: .5rem;
+    color: var(--GrisOscuro);
+}
+.ErrorIC{
+    border: 2px solid var(--Rojo) !important;
+}
+.ErrorCC{
+    border: 2px solid var(--Rojo) !important;
+}
+.IniciarSesion-DatosIncorrectos,
+.CrearCuenta-DatosIncorrectos{
+    display: none;
+    font-size: 1.5rem;
+    color: var(--Rojo);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.IniciarSesion-Ingresar,
+.CrearCuenta-Ingresar{
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 5rem;
+    min-height: 5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--Blanco);
+    border-radius: 1rem;
+    background: linear-gradient(45deg, var(--AzulTexto), var(--RosaTexto));
+    cursor: pointer;
+}
