@@ -1,0 +1,491 @@
+
+
+/*****************  CSS DEL CONTENEDOR *****************/
+.Principal{
+    position: relative;
+    width: 100rem; /* 1000PX */
+    height: 100%;
+    background: var(--Blanco);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* 20PX */
+    overflow: auto;
+    transition: .5s;
+}
+.Principal::-webkit-scrollbar{
+    display: none;
+}
+.OcultarPrincipal{
+    transition: .5s;
+    transform: scale(0) !important;
+}
+/*****************  CSS DEL HEADER *****************/
+.Header{
+    width: 95%;
+    min-height: 7rem; /* 70PX */
+    max-height: 7rem; /* 70PX */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Header .Logo{
+    height: 100%;
+    width: 100%;
+}
+.SinNotificaciones, .ConNotificaciones{
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    padding: 1rem;
+    font-size: 4rem;
+    color: var(--RosaTexto);
+    background: var(--Blanco);
+    border-radius: 50%;
+    border: 2px solid var(--RosaTexto);
+    z-index: 1000;
+}
+.SinNotificaciones:hover, .ConNotificaciones:hover{
+    cursor: pointer;
+}
+.ConNotificaciones{
+    animation: 5s Notificaciones linear infinite;
+}
+@keyframes Notificaciones {
+    75%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(-20deg);
+    }
+    82%{
+        transform: rotate(20deg);
+    }
+    84%{
+        transform: rotate(-20deg);
+    }
+    86%{
+        transform: rotate(20deg);
+    }
+    88%{
+        transform: rotate(-20deg);
+    }
+    90%{
+        transform: rotate(20deg);
+    }
+    92%{
+        transform: rotate(-20deg);
+    }
+    94%{
+        transform: rotate(20deg);
+    }
+    96%{
+        transform: rotate(-20deg);
+    }
+    98%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+/*****************  CSS DE LA SECCION 1 *****************/
+.Seccion-1{
+    position: sticky;
+    top: 0;
+    background: var(--Blanco);
+    width: 95%;
+    min-height: 7rem; /* 60PX */
+    max-height: 7rem; /* 60PX */
+    display: flex;
+    gap: 1rem; /* 10PX */
+    z-index: 1;
+    padding: 1rem 0px;
+} 
+
+/*****************  CSS DE LA BARRA DE BUSQUEDA *****************/
+.BarraBusqueda{
+    width: 90%;
+    position: relative;
+}
+.TerminarBusqueda{
+    position: absolute;
+    right: 7rem;
+    font-size: 2.5em;
+    height: 100%;
+    padding: 0 1rem;
+    color: var(--RosaTexto);
+    cursor: pointer;
+    font-weight: bold;
+    display: none;
+}
+.Buscar{
+    width: 100%;
+    height: 100%;
+    background: var(--RosaPastel);
+    color: var(--RosaTexto);
+    border-radius: 1rem; /* 10PX */
+    padding: 0 11rem 0 1.5rem; /* 35PX */
+    font-size: 1.5rem; /* 15PX */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.Buscar::placeholder{
+    color: var(--RosaTexto);
+    font-weight: bold;
+}
+.BotonBuscar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--RosaTexto);
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+}
+.IconoBuscar{
+    color: var(--Blanco);
+    font-size: 2.5em; /* 25PX */
+    font-weight: 900;
+}
+/*****************  CSS DE AGREGAR REGISTRO *****************/
+.AgregarRegistro{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NuevoRC{
+    position: absolute;
+}
+.NuevoContacto, .NuevaCita, .CerrarSesion{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.NuevoRC, .NuevoContacto, .NuevaCita, .CerrarSesion{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem; /* 10PX */
+    line-height: 1rem; /* 10PX */
+    background: var(--RosaTexto);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.CerrarSesion{
+    background: var(--Rojo);
+}
+.NuevoRC ion-icon, .NuevoContacto ion-icon, .NuevaCita ion-icon, .CerrarSesion ion-icon{
+    color: var(--Blanco);
+    font-size: 3em; /* 25PX */
+    font-weight: 900;
+}
+.MostrarNuevoContacto{
+    top: calc(100% + 1rem);
+    z-index: 1;
+}
+.MostrarNuevaCita{
+    top: calc(200% + 2rem);
+    z-index: 1;
+}
+.MostrarCerrarSesion{
+    top: calc(300% + 3rem);
+    z-index: 1;
+}
+
+.FiltrosDeBusqueda{
+    width: 95%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+.FiltroPorContacto{
+    position: relative;
+    width: 4rem;
+    height: 100%;
+    background: var(--RosaPastel);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.FiltroPorContacto:active{
+    transform: scale(.8);
+    transition: .5s;
+}
+.IconoFiltroContacto{
+    position: absolute;
+    top: calc(50% - .65rem);
+    left: calc(50% - .5rem);
+    font-size: 1rem;
+    color: var(--RosaTexto);
+}
+.IconoFiltroBusqueda{
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    left: calc(50% - 1.1rem);
+    font-size: 2.5rem;
+    color: var(--RosaTexto);
+}
+.FiltroPorFecha{
+    height: 100%;
+    display: flex;
+    gap: .5rem;
+}
+.FiltroPorFecha input{
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 100%;
+    text-transform: uppercase;
+    color: var(--RosaTexto);
+    background: var(--RosaPastel) !important;
+    border-radius: .5rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+.BotonBuscarPorFecha
+{
+    height: 100%;
+    width: 3rem;
+    background: var(--RosaPastel);
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.BotonBorrarFecha{
+    height: 100%;
+    width: 0rem;
+    background: var(--RosaPastel);
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.MostrarBorrarFecha{
+    width: 3rem;
+}
+.IconoBuscarPorFecha,
+.IconoBorrarFecha,
+.IconoBuscarUsuario
+{
+    font-size: 2rem;
+    color: var(--RosaTexto);
+}
+/*****************  CSS DE LA SECCION 2 *****************/
+.Seccion-2{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem; /* 10PX */
+}
+.NoHayCitasRegistradas{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.TituloNoHayCitas{
+    font-size: 2rem;
+    height: 5rem;
+    text-transform: uppercase;
+    color: var(--RosaTexto);
+    font-weight: bold;
+    line-height: 5rem;
+}
+.ImagenNoCitas{
+    height: 20rem;
+}
+/*****************  CSS DE LOS REGISTROS POR FECHA *****************/
+.RegistrosPorFecha{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+/*****************  CSS DEL FILTRO *****************/
+.Fecha{
+    position: relative;
+    grid-column: span 2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--RosaPastel);
+    color: var(--RosaTexto);
+}
+/*****************  CSS DEL REGISTRO *****************/
+.Registro{
+    /* width: 100%; */
+    height: 15rem; /* 150PX */
+    grid-column: span 1;
+    border-radius: 1rem; /* 10PX */
+    display: flex;
+    gap: .5rem;
+    overflow: hidden;
+}
+.RegistrosPorFecha .Registro:nth-child(4n - 3){
+    background: var(--RosaPastel);
+}
+.RegistrosPorFecha .Registro:nth-child(4n - 2){
+    background: var(--VerdePastel);
+}
+.RegistrosPorFecha .Registro:nth-child(4n - 1){
+    background: var(--AzulPastel);
+}
+.RegistrosPorFecha .Registro:nth-child(4n){
+    background: var(--NaranjaPastel);
+}
+.Registro.Concluido{
+    filter: grayscale(100%) !important;
+    background: var(--GrisPastel) !important;
+}
+.Registro.Concluido .ColoniaMunicipio, 
+.Registro.Concluido .Nombre, 
+.Registro.Concluido .Asunto{
+    color: black !important;
+    font-weight: normal !important;
+}
+/*****************  CSS DE LA FOTO DE USUARIO *****************/
+.FotoDelUsuario{
+    min-width: 30%;
+    max-width: 30%;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FotoPerfil{
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    max-height: 90%;
+    border-radius: 1rem; /* 10PX */
+}
+
+/*****************  CSS DE LA INFORMACION *****************/
+.Informacion{
+    position: relative;
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: .5rem; /* 5PX */
+} 
+.ColoniaMunicipio, .Nombre, .Asunto, .FechaHora{
+    width: 100%;
+    font-weight: 600;
+}
+.ColoniaMunicipio{
+    font-weight: normal !important;
+}
+.FechaHora{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+}
+.Nombre{
+    font-size: 1.3rem; /* 15PX */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Asunto{
+    overflow: hidden;
+}
+.Registro:nth-child(4n - 3) .ColoniaMunicipio,
+.Registro:nth-child(4n - 2) .ColoniaMunicipio,
+.Registro:nth-child(4n - 1) .ColoniaMunicipio,
+.Registro:nth-child(4n) .ColoniaMunicipio
+{
+    color: var(--Negro);
+    opacity: .8;
+}
+.Registro:nth-child(4n - 3) .Asunto,
+.Registro:nth-child(4n - 3) .FechaHora {
+    color: var(--RosaTexto);
+}
+.Registro:nth-child(4n - 3) .MostrarInformacion ion-icon,
+.Registro:nth-child(4n - 3) .FechaHora ion-icon{
+    color: var(--RosaTexto);
+}
+.Registro:nth-child(4n - 2) .Asunto,
+.Registro:nth-child(4n - 2) .FechaHora
+{
+    color: var(--VerdeTexto);
+}
+.Registro:nth-child(4n - 2) .MostrarInformacion ion-icon,
+.Registro:nth-child(4n - 2) .FechaHora ion-icon{
+    color: var(--VerdeTexto);
+}
+.Registro:nth-child(4n - 1) .Asunto,
+.Registro:nth-child(4n - 1) .FechaHora
+{
+    color: var(--AzulTexto);
+}
+.Registro:nth-child(4n - 1) .MostrarInformacion ion-icon,
+.Registro:nth-child(4n - 1) .FechaHora ion-icon
+{
+    color: var(--AzulTexto);
+}
+.Registro:nth-child(4n) .Asunto,
+.Registro:nth-child(4n) .FechaHora
+{
+    color: var(--NaranjaTexto);
+}
+.Registro:nth-child(4n) .MostrarInformacion ion-icon,
+.Registro:nth-child(4n) .FechaHora ion-icon
+{
+    color: var(--NaranjaTexto);
+}
+
+/*****************  CSS DE VER USUARIO *****************/
+.VerUsuario{
+    min-width: 20%;
+    max-width: 20%;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MostrarInformacion{
+    font-size: 1rem; /* 10PX */
+    line-height: 1rem; /* 10PX */
+    padding: 1rem; /* 10PX */
+    border-radius: 50%;
+    background: var(--Blanco);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+.MostrarInformacion ion-icon{
+    font-size: 2.5rem; /* 25PX */
+    font-weight: bold;
+}

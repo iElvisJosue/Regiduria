@@ -1,0 +1,174 @@
+/*****************  CSS DEL REGISTRO DE USUARIO *****************/
+.RegistrarCita{
+    position: absolute;
+    width: 100rem; /* 1000PX */
+    height: 100%;
+    background: var(--Blanco);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+    bottom: -120%;
+    transition: .5s;
+    overflow: auto;
+}
+.RegistrarCita::-webkit-scrollbar{
+    display: none;
+}
+.Mostrar{
+    z-index: 999;
+    bottom: 0;
+}
+/*****************  CSS DEL FORMULARIO DE REGISTRAR INFORMACION *****************/
+.Form-Cita{
+    position: relative;
+    width: 50rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+/*****************  CSS DEL FORMULARIO DEL BOTON DE CERRAR EL FORMULARIO *****************/
+
+
+/*****************  CSS DEL FORMULARIO DEL ENCABEZADO DEL FORMULARIO *****************/
+.Form-TituloCita{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+}
+.Form-CitaCerrar{
+    height: 100%;
+    background: var(--GrisOscuro);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Form-IconoCitaCerrar{
+    color: var(--Blanco);
+    font-size: 2.5rem;
+    padding: 0 .5rem;
+}
+.Form-TituloRegistrarCita{
+    width: 100%;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--GrisOscuro);
+    text-align: center;
+}
+/*****************  CSS DEL FORMULARIO DE LOS INPUTS DEL FORMULARIO *****************/
+.Form-CitaNombre,
+.Form-CitaFecha,
+.Form-CitaHora,
+.Form-CitaMunicipio,
+.Form-CitaColonia,
+.Form-CitaCalle,
+.Form-CitaAsunto,
+.Form-CitaComentarios,
+.Form-CitaArchivos
+{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.Form-CitaTituloNombre,
+.Form-CitaTituloFecha,
+.Form-CitaTituloHora,
+.Form-CitaTituloMunicipio,
+.Form-CitaTituloColonia,
+.Form-CitaTituloCalle,
+.Form-CitaTituloAsunto,
+.Form-CitaTituloComentarios,
+.Form-CitaTituloArchivo
+{
+    height: 2rem;
+    font-size: 1.3rem;
+    color: var(--GrisOscuro);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Form-CitaInputNombre{
+    position: relative;
+    padding: 0 !important;
+}
+.Form-BotonAbrirContacto{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.2rem;
+    height: 100%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Form-BotonAbrirContacto ion-icon{
+    font-size: 2rem;
+}
+.Form-InputBuscarContactoEnCita{
+    background: var(--Blanco) !important;
+}
+.Form-InputBuscarContactoEnCita,
+.Form-CitaInputFecha,
+.Form-CitaInputHora,
+.Form-CitaInputCalle,
+.Form-CitaInputAsunto,
+.Form-CitaInputComentarios,
+.Form-CitaInputArchivo
+{
+    width: 100%;
+    height: 4rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: var(--GrisOscuro);
+    padding: 1rem 0;
+    border: transparent;
+    border-bottom: 1px solid var(--GrisOscuro);
+    background: var(--GrisPastel);
+}
+.Form-GuardarRegistroCita{
+    width: 100%;
+    background: var(--AzulPastel);
+    color: var(--Blanco);
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+.Form-GuardarRegistroCita.Completos{
+    background: var(--Azul);
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.Form-CitaInputMunicipio,
+.Form-CitaInputColonia
+{
+    appearance: none;
+    height: 4rem;
+    font-size: 1.3rem;
+    color: var(--GrisOscuro);
+    cursor: pointer;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--GrisOscuro);
+    background: var(--GrisPastel);
+}
+.Form-CitaInputMunicipio option,
+.Form-CitaInputColonia option
+{
+    appearance: none;
+    font-size: 1.3rem;
+    background: var(--GrisPastel);
+    color: var(--GrisOscuro);
+}
+
+.ActivarInputs{
+    background: var(--Blanco);
+}

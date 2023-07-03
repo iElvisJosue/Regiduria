@@ -1,0 +1,37 @@
+:root{
+    --Negro: #000000;
+    --Blanco: #ffffff;
+    --AzulPastel: #A3CAD6;
+    --AzulTexto: #354F4F;
+    --VerdePastel: #C2D6BD;
+    --VerdeTexto: #41593B;
+    --NaranjaPastel: #F2DAC6;
+    --NaranjaTexto: #7A5333;
+    --RosaPastel: #EFE0E0;
+    --RosaTexto: #785656;;
+    --GrisPastel: #EEEEEE;
+    --GrisOscuro: #59595B;
+    --Rojo: #E7625F;
+    --Azul: #41729F;
+    --Verde: #81B622;
+}
+
+/*****************  CSS DEL BODY *****************/
+body{
+    background: linear-gradient(45deg, var(--AzulTexto), var(--RosaTexto));
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+button, input, select, textarea{
+    outline: none;
+    border: none;
+}
+button:active{
+    transform: scale(.8);
+    cursor: pointer;
+    transition: .5s;
+}

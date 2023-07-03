@@ -1,0 +1,220 @@
+/*****************  CSS DEL REGISTRO DE USUARIO *****************/
+.BuscarContacto{
+    position: absolute;
+    width: 100rem; /* 1000PX */
+    height: 100%;
+    background: var(--Blanco);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+    bottom: -120%;
+    transition: .5s;
+    overflow: auto;
+}
+.BuscarContacto::-webkit-scrollbar{
+    display: none;
+}
+.Mostrar{
+    z-index: 999;
+    bottom: 0;
+}
+.Form-InformacionContacto{
+    position: relative;
+    width: 50rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding-bottom: 1rem;
+}
+.Form-TituloBuscarContacto{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+}
+.Form-BuscarContactoCerrar{
+    height: 100%;
+    background: var(--GrisOscuro);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Form-IconoCerrarBuscarContacto{
+    color: var(--Blanco);
+    font-size: 2.5rem;
+    padding: 0 .5rem;
+}
+.Form-ContactoTitulo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--GrisOscuro);
+}
+.Form-ModificarContacto{
+    display: flex;
+}
+.Form-ContactoEditar{
+    background: var(--Azul);
+    pointer-events: none;
+    opacity: .5;
+}
+.Form-ContactoEliminar{
+    background: var(--Rojo);
+    opacity: .5;
+    pointer-events: none;
+}
+.Form-ContactoEditar,
+.Form-ContactoEliminar
+{
+    padding: .5rem;
+    color: var(--Blanco);
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.Form-ContactoFotoPreview{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+}
+.Form-ContactoFotoMiniatura{
+    position: relative;
+    min-width: 5rem;
+    max-width: 20rem;
+    height: 100%;
+}
+.Form-ImgContactoFotoMiniatura{
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+}
+.Form-AbrirInputFile{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,.2),
+        rgba(0,0,0,.2)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Form-ContactoCambiarFoto{
+    font-size: 3rem;
+    color: var(--Blanco);
+    background: var(--Azul);
+    border-radius: 50%;
+    padding: .5rem;
+    cursor: pointer;
+}
+.Form-ContactoFoto{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.Form-ContactoNombre,
+.Form-ContactoTelefono,
+.Form-ContactoOcupacion,
+.Form-ContactoMunicipio,
+.Form-ContactoColonia,
+.Form-ContactoCalle,
+.Form-ContactoComentario
+{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.Form-TituloBuscarNombrePorContacto,
+.Form-TituloContactoNombre,
+.Form-TituloContactoTelefono,
+.Form-TituloContactoOcupacion,
+.Form-TituloContactoMunicipio,
+.Form-TituloContactoColonia,
+.Form-TituloContactoCalle,
+.Form-TituloContactoComentario,
+.Form-TituloContactoFoto
+{
+    height: 2rem;
+    font-size: 1.3rem;
+    color: var(--GrisOscuro);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Form-InputBuscarNombrePorContacto{
+    width: 100%;
+    height: 4rem;
+    font-size: 1.3rem;
+    color: var(--GrisOscuro);
+    padding: 1rem 0;
+    border: transparent;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--GrisOscuro);
+}
+.Form-InputContactoNombre,
+.Form-InputContactoOcupacion,
+.Form-InputContactoTelefono,
+.Form-InputContactoCalle,
+.Form-InputContactoComentario,
+.Form-InputContactoFoto,
+.Form-InputContactoMunicipio,
+.Form-InputContactoColonia
+{
+    width: 100%;
+    height: 4rem;
+    font-size: 1.3rem;
+    color: var(--GrisOscuro);
+    padding: 1rem 0;
+    border: transparent;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--GrisOscuro);
+    background: var(--GrisPastel);
+}
+.Form-InputContactoMunicipio,
+.Form-InputContactoColonia
+{
+    appearance: none;
+    cursor: pointer;
+}
+.Form-InputContactoMunicipio option,
+.Form-InputContactoColonia option
+{
+    appearance: none;
+    font-size: 1.3rem;
+    background: var(--GrisPastel);
+    color: var(--GrisOscuro);
+}
+.Form-InputContactoTelefono::-webkit-inner-spin-button{
+    appearance: none;
+}
+.Form-GuardarEdicionContacto{
+    width: 100%;
+    background: var(--AzulPastel);
+    color: var(--Blanco);
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+.EdicionCompleta{
+    background: var(--Azul);
+    pointer-events: all;
+    cursor: pointer;
+}
+.ActivarInputsBuscarContacto{
+    background: var(--Blanco);
+}
+.ActivarEliminarYEditar{
+    opacity: 1;
+    pointer-events: all;
+}

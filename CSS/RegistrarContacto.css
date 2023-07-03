@@ -1,0 +1,146 @@
+/*****************  CSS DEL REGISTRO DE USUARIO *****************/
+.RegistrarContacto{
+    position: absolute;
+    width: 100rem; /* 1000PX */
+    height: 100%;
+    background: var(--Blanco);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+    bottom: -120%;
+    transition: .5s;
+    overflow: auto;
+}
+.RegistrarContacto::-webkit-scrollbar{
+    display: none;
+}
+.Mostrar{
+    z-index: 999;
+    bottom: 0;
+}
+/*****************  CSS DEL FORMULARIO DE REGISTRAR INFORMACION *****************/
+.Form-Informacion{
+    position: relative;
+    width: 50rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+/*****************  CSS DEL FORMULARIO DEL BOTON DE CERRAR EL FORMULARIO *****************/
+
+
+/*****************  CSS DEL FORMULARIO DEL ENCABEZADO DEL FORMULARIO *****************/
+.Form-Titulo{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+}
+.Form-RegistrarCerrar{
+    height: 100%;
+    background: var(--GrisOscuro);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Form-IconoCerrar{
+    color: var(--Blanco);
+    font-size: 2.5rem;
+    padding: 0 .5rem;
+}
+.Form-TituloRegistrar{
+    width: 100%;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--GrisOscuro);
+    text-align: center;
+}
+/*****************  CSS DEL FORMULARIO DE LOS INPUTS DEL FORMULARIO *****************/
+.Form-Nombre,
+.Form-Telefono,
+.Form-Ocupacion,
+.Form-Municipio,
+.Form-Colonia,
+.Form-Calle,
+.Form-Comentario,
+.Form-Archivo
+{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.Form-TituloNombre,
+.Form-TituloTelefono,
+.Form-TituloOcupacion,
+.Form-TituloMunicipio,
+.Form-TituloColonia,
+.Form-TituloCalle,
+.Form-TituloComentario,
+.Form-TituloArchivo
+{
+    height: 2rem;
+    font-size: 1.3rem;
+    color: var(--GrisOscuro);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Form-InputNombre,
+.Form-InputOcupacion,
+.Form-InputTelefono,
+.Form-InputCalle,
+.Form-InputComentario,
+.Form-InputArchivo
+{
+    width: 100%;
+    height: 4rem;
+    font-size: 1.3rem;
+    color: var(--GrisOscuro);
+    padding: 1rem 0;
+    border: transparent;
+    border-bottom: 1px solid var(--GrisOscuro);
+    text-transform: uppercase;
+}
+.Form-InputMunicipio,
+.Form-InputColonia
+{
+    appearance: none;
+    height: 4rem;
+    font-size: 1.3rem;
+    color: var(--GrisOscuro);
+    border-bottom: 1px solid var(--GrisOscuro);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.Form-InputMunicipio option,
+.Form-InputColonia option
+{
+    appearance: none;
+    font-size: 1.3rem;
+    background: var(--GrisPastel);
+    color: var(--GrisOscuro);
+}
+.Form-InputTelefono::-webkit-inner-spin-button{
+    appearance: none;
+}
+.Form-GuardarRegistroContacto{
+    width: 100%;
+    background: var(--AzulPastel);
+    color: var(--Blanco);
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+.Form-GuardarRegistroContacto.Completos{
+    background: var(--Azul);
+    pointer-events: all;
+    cursor: pointer;
+}
+

@@ -1,0 +1,250 @@
+.MensajeBorrarCita,
+.MensajeBorrarContacto,
+.MensajeMaximoArchivos,
+.MensajeImagenDuplicada,
+.MensajeContactoAgregado,
+.MensajeCitaAgregada,
+.MensajeContactoInexistente,
+.MensajeArchivoExistente,
+.MensajeContactoActualizado,
+.MensajeContactoEliminado,
+.MensajeConcluirCita,
+.MensajeCitaConcluida,
+.MensajeCitaEliminada,
+.MensajeCitaActualizada,
+.MensajeNotificacion,
+.MensajeContactoExistente
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    opacity: 0;
+}
+.MensajeBorrarCita.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeBorrarContacto.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeMaximoArchivos.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeImagenDuplicada.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeContactoAgregado.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeCitaAgregada.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeContactoInexistente.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeArchivoExistente.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeContactoActualizado.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeContactoEliminado.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeConcluirCita.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeCitaConcluida.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeCitaEliminada.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeCitaActualizada.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeNotificacion.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.MensajeContactoExistente.Mostrar{
+    z-index: 1000;
+    opacity: 1;
+}
+.CuadroContactoAgregado,
+.CuadroCitaAgregada,
+.CuadroPreguntaContacto,
+.CuadroPreguntaCita,
+.CuadroMensajeCitaAgregada,
+.CuadroMaximoArchivos,
+.CuadroMensajeImagenDuplicada,
+.CuadroMensajeContactoInexistente,
+.CuadroMensajeArchivoExistente,
+.CuadroMensajeContactoActualizado,
+.CuadroContactoEliminado,
+.CuadroPreguntaConcluirCita,
+.CuadroMensajeCitaConcluida,
+.CuadroCitaEliminada,
+.CuadroMensajeCitaActualizada,
+.CuadroMensajeNotificacion,
+.CuadroPreguntaContactoExistente
+{
+    min-width: 30rem;
+    max-width: 30rem;
+    height: auto;
+    border-radius: 1rem;
+    background: var(--Blanco);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2em;
+}
+.CuadroMensajeNotificacion{
+    position: relative;
+}
+.MensajeNotificacionCerrar{
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    font-size: 3rem;
+    padding: .5rem;
+    border-radius: 50%;
+    color: var(--Blanco);
+    background: var(--Rojo);
+    border: 2px solid var(--Blanco);
+    cursor: pointer;
+}
+.MensajeIconoBorrarCita,
+.MensajeIconoBorrarContacto,
+.MensajeIconoMaximoArchivos,
+.MensajeIconoImagenDuplicada,
+.MensajeIconoContactoAgregado,
+.MensajeIconoCitaAgregada,
+.MensajeIconoContactoInexistente,
+.MensajeIconoArchivoExistente,
+.MensajeIconoContactoActualizado,
+.MensajeIconoContactoEliminado,
+.MensajeIconoConcluirCita,
+.MensajeIconoCitaConcluida,
+.MensajeIconoCitaEliminada,
+.MensajeIconoCitaActualizada,
+.MensajeIconoNotificacion,
+.MensajeIconoContactoExistente
+{
+    font-size: 5rem;
+    color: var(--GrisOscuro);
+}
+.MensajeIconoMaximoArchivos,
+.MensajeIconoImagenDuplicada,
+.MensajeIconoContactoInexistente,
+.MensajeIconoArchivoExistente,
+.MensajeIconoNotificacion,
+.MensajeIconoContactoExistente
+{
+    color: var(--Rojo) !important;
+}
+.MensajeIconoContactoAgregado,
+.MensajeIconoCitaAgregada,
+.MensajeIconoContactoActualizado,
+.MensajeIconoContactoEliminado,
+.MensajeIconoCitaConcluida,
+.MensajeIconoCitaEliminada,
+.MensajeIconoCitaActualizada
+{
+    color: var(--Verde) !important;
+}
+.TituloMensajeContactoAgregado,
+.TituloMensajeCitaAgregada,
+.MensajeBorrarCitaPregunta,
+.MensajeBorrarContactoPregunta,
+.TituloMaximoArchivos,
+.TituloImagenDuplicada,
+.TituloContactoInexistente,
+.TituloArchivoExistente,
+.TituloMensajeContactoActualizado,
+.TituloMensajeContactoEliminado,
+.MensajeConcluirCitaPregunta,
+.TituloMensajeCitaConcluida,
+.TituloMensajeCitaEliminada,
+.TituloMensajeCitaActualizada,
+.TituloNotificacion,
+.MensajeContactoExistentePregunta
+{
+    font-size: 2rem;
+    color: var(--GrisOscuro);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.MensajeBorrarCitaMensaje,
+.MensajeBorrarContactoMensaje,
+.ContenidoMensajeMaximoArchivos,
+.MensajeInstruccionesImagenDuplicada,
+.MensajeInstruccionesContactoInexistente,
+.MensajeInstruccionesArchivoExistente,
+.MensajeInstruccionesContactoActualizado,
+.MensajeConcluirCitaMensaje,
+.MensajeInstruccionesNotificacion,
+.MensajeContactoExistenteMensaje
+{
+    font-size: 1.2rem;
+    color: var(--GrisOscuro);
+}
+/*BOTONES EN MODALS*/
+.BotonesMensajeBorrarCita,
+.BotonesMensajeBorrarContacto,
+.BotonesMensajeConcluirCita,
+.BotonesMensajeContactoExistente
+{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    gap: 1rem;
+}
+.MensajeBorrarCitaCancelar, 
+.MensajeBorrarCitaAceptar,
+.MensajeBorrarContactoCancelar, 
+.MensajeBorrarContactoAceptar,
+.MensajeConcluirCitaCancelar,
+.MensajeConcluirCitaAceptar,
+.MensajeContactoExistenteCancelar,
+.MensajeContactoExistenteAceptar
+{
+    width: 50%;
+    border-radius: .8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.MensajeBorrarCitaCancelar,
+.MensajeBorrarContactoCancelar,
+.MensajeConcluirCitaCancelar,
+.MensajeContactoExistenteCancelar
+{
+    background: var(--GrisPastel);
+    color: var(--GrisOscuro);
+}
+.MensajeBorrarCitaAceptar,
+.MensajeBorrarContactoAceptar,
+.MensajeConcluirCitaAceptar,
+.MensajeContactoExistenteAceptar
+{
+    background: var(--Rojo);
+    color: var(--Blanco);
+}

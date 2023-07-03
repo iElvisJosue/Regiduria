@@ -1,0 +1,91 @@
+@media (max-width: 1024px){
+    .Principal, 
+    .VerInformacion, 
+    .RegistrarContacto, 
+    .RegistrarCita, 
+    .BuscarContacto,
+    .EditarCita{
+        width: 100% !important;
+    }
+    .IniciarSesion, .CrearCuenta{
+        width: 100% !important;
+        height: 100vh !important;
+        border-radius: 0;
+        overflow: auto !important;
+    }
+}
+@media (max-width: 768px){
+    .Registro {
+        grid-column: span 2;
+    }
+}
+@media (max-width: 540px){
+    .Informacion-FotoPerfil, 
+    .Informacion-Cita, 
+    .Form-Informacion, 
+    .Form-Cita,
+    .Form-InformacionContacto,
+    .Form-EditarCita
+    {
+        width: 100% !important;
+    }
+    .Informacion-DatosDelContacto, 
+    .Informacion-DatosDeLaCita{
+        padding: 1rem !important;
+    }
+    .Form-Informacion div:nth-child(1n + 2),
+    .Form-Cita div:nth-child(1n + 2),
+    .Form-InformacionContacto div:nth-child(1n + 2),
+    .Form-EditarCita div:nth-child(1n + 2),
+    .EditarCita-Documentos
+    {
+        padding: 0 1rem;
+    }
+    .Form-ModificarContacto{
+        padding: 0 !important;
+    }
+    .Form-ResultadoDeBusqueda{
+        padding: 0 !important;
+    }
+    .Form-GuardarRegistroContacto,
+    .Form-GuardarRegistroCita,
+    .Form-GuardarEdicionContacto,
+    .Form-EditarCitarGuardar,
+    .Form-ResultadoDeBusqueda,
+    .Form-RegistrarCitaResultadoDeBusqueda,
+    .Form-ResultadoDeBusquedaContacto,
+    .Form-EditarCitaResultadoDeBusqueda
+    {
+        width: calc(100% - 2rem) !important;
+    }
+    .Form-ContactoTitulo, 
+    .Form-TituloRegistrar
+    {
+        font-size: 2rem !important;
+    }
+}
+@media (max-width: 414px){
+    *{
+        font-size: 9px;
+    }
+    .Seccion-1 .BarraBusqueda{
+        width: 85%;
+    }
+    .Seccion-1 .AgregarRegistro{
+        width: 15%;
+    }
+}
+@media (max-width: 375px){
+    .Form-ContactoTitulo{
+        font-size: 1.8rem !important;
+    }
+    .MostrarInformacion{
+        padding: .7rem; /* 10PX */
+    }
+    .MostrarInformacion ion-icon{
+        font-size: 2rem;
+    }
+    .TituloNoHayCitas{
+        font-size: 1.5rem;
+    }
+}
